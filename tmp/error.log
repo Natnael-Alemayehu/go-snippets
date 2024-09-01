@@ -1,0 +1,23 @@
+Error	2024/08/23 11:53:35 main.go:48: listen tcp :4000: bind: address already in use
+exit status 1
+Error	2024/08/23 11:53:43 main.go:48: listen tcp :4000: bind: address already in use
+exit status 1
+Error	2024/08/23 11:53:48 main.go:48: listen tcp :4000: bind: address already in use
+exit status 1
+Error	2024/08/23 11:53:48 main.go:48: listen tcp :4000: bind: address already in use
+exit status 1
+Error	2024/08/23 11:53:49 main.go:48: listen tcp :4000: bind: address already in use
+exit status 1
+Error	2024/08/23 11:53:49 main.go:48: listen tcp :4000: bind: address already in use
+exit status 1
+Error	2024/08/23 11:53:49 main.go:48: listen tcp :4000: bind: address already in use
+exit status 1
+Error	2024/08/23 12:38:04 main.go:60: listen tcp :4000: bind: address already in use
+exit status 1
+Error	2024/08/23 12:38:25 main.go:60: listen tcp :4000: bind: address already in use
+exit status 1
+signal: interrupt
+Error	2024/08/25 15:38:48 handlers.go:24: open ./ui/html/pages/home.tmpl.html: no such file or directory
+Error	2024/08/25 15:39:03 handlers.go:24: open ./ui/html/pages/home.tmpl.html: no such file or directory
+signal: interrupt
+signal: interrupt
