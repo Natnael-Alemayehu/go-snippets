@@ -3,6 +3,8 @@ package main
 import (
 	"net/http"
 
+	"snippetbox.natenine.com/ui"
+
 	"github.com/julienschmidt/httprouter"
 	"github.com/justinas/alice"
 )
@@ -16,8 +18,11 @@ func (app *application) routes() http.Handler {
 	})
 
 	// For static files
-	fileSever := http.FileServer(http.Dir("./ui/static"))
-	router.Handler(http.MethodGet, "/static/*filepath", http.StripPrefix("/static", fileSever))
+	fileSever := http.FileServer(http.FS(ui.Files))
+	router.Handler(http.MethodGet, "/static/*filepath", fileSever)
+
+	// Adding a ping route for testing
+	router.HandlerFunc(http.MethodGet, "/ping", ping)
 
 	dynamic := alice.New(app.sessionManager.LoadAndSave, noSurf, app.authenticate)
 
