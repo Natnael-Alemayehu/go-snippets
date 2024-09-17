@@ -33,7 +33,7 @@ func main() {
 	// Initializing flag variables
 	addr := flag.String("addr", ":4000", "HTTP network address")
 	// Define a new command-line flag for the MySQL DSN string
-	dsn := flag.String("dsn", "web:Oldsuccess1578@@/snippetbox?parseTime=true", "MySQL data source name")
+	dsn := flag.String("dsn", "web:db_password@/snippetbox?parseTime=true", "MySQL data source name")
 	flag.Parse()
 
 	// Initializing logging information
